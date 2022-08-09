@@ -1,0 +1,709 @@
+@import url("https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap");
+body {
+  background-color: #f7f7f7;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main {
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Khand", sans-serif;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.navbar-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  color: #fff;
+  font-family: "Khand", sans-serif;
+}
+
+.navbar-content .nav-item {
+  padding: 0;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 20px;
+  position: relative;
+}
+
+.navbar-content .nav-item::after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 3px;
+  bottom: 5px;
+  left: 0;
+  background-color: #e1251b;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.navbar-content .nav-item:hover::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 3px;
+  bottom: 5px;
+  left: 0;
+  background-color: #e1251b;
+}
+
+.header-eipsa.show-header .navbar {
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  background: #f7f7f7;
+  -webkit-box-shadow: 1px 5px 22px 9px rgba(0, 0, 0, 0.07);
+          box-shadow: 1px 5px 22px 9px rgba(0, 0, 0, 0.07);
+}
+
+.header-eipsa.show-header .navbar .navbar-content .nav-item a {
+  color: #062a30;
+}
+
+.nav-link.active {
+  position: relative;
+}
+
+.nav-link.active::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 3px;
+  bottom: 5px;
+  left: 0;
+  background-color: #e1251b;
+}
+
+.banner-container {
+  padding: 15rem 0 10rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("https://cdn.shopify.com/s/files/1/0040/8551/4369/files/Banner_EIPSA.png?v=1660000960");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.banner-container::after {
+  content: "";
+  background-color: #062a30;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(55, 55, 55, 0)), color-stop(37.93%, rgba(6, 41, 47, 0.381961)), to(#062a30));
+  background: linear-gradient(180deg, rgba(55, 55, 55, 0) 0%, rgba(6, 41, 47, 0.381961) 37.93%, #062a30 100%);
+}
+
+.banner-container .banner-titles {
+  padding-left: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 3;
+}
+
+.banner-container .banner-titles h1 {
+  font-size: 50px;
+  font-weight: 600;
+  color: #fff;
+  position: relative;
+}
+
+.banner-container .banner-titles h1::after {
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  width: 30%;
+  height: 3px;
+  background-color: #e1251b;
+}
+
+.banner-container .banner-titles p {
+  margin-top: 3rem;
+  color: #fff;
+  line-height: 2rem;
+}
+
+.banner-figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.banner-figure::after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  top: -2rem;
+  right: -12rem;
+  z-index: 1;
+  -webkit-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.39);
+          box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.39);
+  -webkit-clip-path: polygon(0 0, 80% 0, 100% 20%, 100% 100%, 20% 100%, 0 80%);
+          clip-path: polygon(0 0, 80% 0, 100% 20%, 100% 100%, 20% 100%, 0 80%);
+  background-image: url("https://as1.ftcdn.net/v2/jpg/04/39/13/62/1000_F_439136266_djHYq3mc89RCX3T9EUZkqDIyLPGgcEL5.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 40% 0%;
+}
+
+.figure__eipsa {
+  width: 293px;
+  height: 401px;
+  padding: 1rem;
+  background-color: #e1251b;
+  -webkit-clip-path: polygon(0 0, 80% 0, 100% 20%, 100% 100%, 20% 100%, 0 80%);
+          clip-path: polygon(0 0, 80% 0, 100% 20%, 100% 100%, 20% 100%, 0 80%);
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+
+.figure__eipsa h3 {
+  margin-top: 3rem;
+  position: relative;
+}
+
+.figure__eipsa h3::after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  width: 30%;
+  height: 4px;
+  top: -1rem;
+  left: 0;
+}
+
+.figure__eipsa .figure__eipsa--bottom {
+  font-family: "Khand", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+}
+
+.figure__eipsa .figure__eipsa--bottom::before {
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  content: "";
+  top: 0;
+  right: 7px;
+  background-color: #fff;
+  width: 37px;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.figure__eipsa .figure__eipsa--bottom span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  color: #062a30;
+  padding: 8px;
+}
+
+.figure__eipsa .figure__eipsa--bottom:hover {
+  color: #b2292e;
+}
+
+.figure__eipsa .figure__eipsa--bottom:hover span {
+  background-color: none;
+  color: #e1251b;
+  -webkit-transform: translateX(-5px);
+          transform: translateX(-5px);
+}
+
+.figure__eipsa .figure__eipsa--bottom:hover::before {
+  width: 100%;
+}
+
+.aboutUs-container {
+  padding: 10rem 0;
+}
+
+.aboutUs-container .aboutUs-container__image {
+  background-image: url("https://cdn.shopify.com/s/files/1/0040/8551/4369/files/Team_EIPSA.png?v=1659968597");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 759px;
+}
+
+.aboutUs-container .aboutUs-container__description {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3rem;
+}
+
+.aboutUs-container .aboutUs-container__description h2 {
+  font-size: 80px;
+  font-weight: 700;
+  position: relative;
+  text-transform: uppercase;
+  -webkit-transform: translateX(-145px);
+          transform: translateX(-145px);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.aboutUs-container .aboutUs-container__description h2 span {
+  color: #fff;
+}
+
+.aboutUs-container .aboutUs-container__description p {
+  color: #3a3a3a9f;
+  line-height: 2rem;
+}
+
+.btn-eipsa-primary {
+  font-family: "Khand", sans-serif;
+  background-color: #062a30;
+  color: #fff;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: 600;
+  -webkit-box-shadow: 1px 5px 22px 9px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 5px 22px 9px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.btn-eipsa-primary:hover {
+  background-color: #052126;
+  color: #fff;
+}
+
+.portfolio--container__header {
+  padding: 5rem 0 14rem 0;
+}
+
+.portfolio--container__header .portfolio--title {
+  text-align: left;
+  position: relative;
+  font-family: "Khand", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.portfolio--container__header .portfolio--title span {
+  position: absolute;
+  font-size: 180px;
+  top: -100px;
+  left: -280px;
+  z-index: -1;
+  color: #ecedef;
+}
+
+.portfolio--container__header .portfolio--title h2 {
+  color: #062a30;
+  font-weight: 50px;
+  font-size: 50px;
+  font-weight: 700;
+  position: relative;
+}
+
+.portfolio--container__header .portfolio--title h2::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 15%;
+  bottom: -1rem;
+  left: 0;
+  background-color: #e1251b;
+}
+
+.portfolio--container__header .portfolio--banner {
+  position: relative;
+}
+
+.portfolio--container__header .portfolio--banner img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.portfolio--container__header .portfolio--banner .portfolio--banner__description {
+  position: absolute;
+  width: 293px;
+  height: 401px;
+  padding: 1rem;
+  background-color: #e1251b;
+  -webkit-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.39);
+          box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.39);
+  -webkit-clip-path: polygon(0 0, 80% 0, 100% 20%, 100% 100%, 20% 100%, 0 80%);
+          clip-path: polygon(0 0, 80% 0, 100% 20%, 100% 100%, 20% 100%, 0 80%);
+  color: #fff;
+  bottom: -200px;
+  left: 100px;
+}
+
+.portfolio--container__header .portfolio--banner .portfolio--banner__description .figure__eipsa--bottom {
+  font-family: "Khand", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+}
+
+.portfolio--container__header .portfolio--banner .portfolio--banner__description .figure__eipsa--bottom::before {
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  content: "";
+  top: 0;
+  right: 7px;
+  background-color: #fff;
+  width: 37px;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.portfolio--container__header .portfolio--banner .portfolio--banner__description .figure__eipsa--bottom span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  color: #062a30;
+  padding: 8px;
+}
+
+.portfolio--container__header .portfolio--banner .portfolio--banner__description .figure__eipsa--bottom:hover {
+  color: #b2292e;
+}
+
+.portfolio--container__header .portfolio--banner .portfolio--banner__description .figure__eipsa--bottom:hover span {
+  background-color: none;
+  color: #e1251b;
+  -webkit-transform: translateX(-5px);
+          transform: translateX(-5px);
+}
+
+.portfolio--container__header .portfolio--banner .portfolio--banner__description .figure__eipsa--bottom:hover::before {
+  width: 100%;
+}
+
+.portfolio--container__header .portfolio--banner .portfolio--banner__description p {
+  position: relative;
+  margin-top: 3rem;
+  line-height: 2rem;
+}
+
+.portfolio--container__header .portfolio--banner .portfolio--banner__description p::after {
+  content: "";
+  width: 30%;
+  height: 4px;
+  background-color: #fff;
+  position: absolute;
+  top: -1rem;
+  left: 0;
+  text-align: start;
+}
+
+.portfolio--banner:nth-child(4) {
+  position: relative;
+  -webkit-transform: translateY(125px);
+          transform: translateY(125px);
+}
+
+.portfolio--container__body {
+  padding: 5rem 0;
+}
+
+.portfolio--container__body .portfolio--container__body--title h2 {
+  padding-right: 14rem;
+  font-size: 50px;
+  font-weight: 700;
+  color: #062a30;
+  position: relative;
+}
+
+.portfolio--container__body .portfolio--container__body--title h2::after {
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  height: 4px;
+  width: 15%;
+  background-color: #e1251b;
+}
+
+.portfolio--container__body .portfolio--container__body--title p {
+  padding-right: 10rem;
+  color: #3a3a3a9f;
+  margin-top: 2rem;
+  line-height: 2rem;
+}
+
+.carousel-item__application .item__application {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Khan", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 1rem;
+  color: #062a30;
+  font-size: 16px;
+  padding: 2rem 1rem;
+  -webkit-box-shadow: 3px 5px 13px -2px rgba(0, 0, 0, 0.151);
+          box-shadow: 3px 5px 13px -2px rgba(0, 0, 0, 0.151);
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+.carousel-item__application .item__application:hover {
+  background-color: #062a30;
+  color: #fff;
+}
+
+.carousel-item__application .item__application .number--application {
+  position: relative;
+  font-size: 19px;
+}
+
+.carousel-item__application .item__application .number--application::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #e1251b;
+}
+
+.contact-container {
+  background: #f7f7f7;
+  -webkit-box-shadow: 1px 5px 22px 9px rgba(0, 0, 0, 0.07);
+          box-shadow: 1px 5px 22px 9px rgba(0, 0, 0, 0.07);
+  padding: 5rem 0;
+  margin: 5rem 0;
+  position: relative;
+}
+
+.contact-container .icon-bg {
+  position: absolute;
+  bottom: -100px;
+  left: -80px;
+  z-index: -1;
+}
+
+.contact-container .icon-bg svg {
+  width: 25rem;
+  height: 25rem;
+  fill: #ecedef;
+}
+
+.contact-container .icon-bg svg path {
+  fill: #ecedef;
+}
+
+.contact--title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  font-family: "Khand", sans-serif;
+}
+
+.contact--title h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.contact--title h2 span {
+  color: #e1251b;
+}
+
+.contact-icon {
+  margin-bottom: 1rem;
+}
+
+.contact--info {
+  font-family: "Khand", sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.contact--info .contact--info__title {
+  position: relative;
+}
+
+.contact--info .contact--info__title::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  background-color: #e1251b;
+  height: 3px;
+  width: 10%;
+}
+
+.contact--info a {
+  font-family: var(--bs-body-font-family);
+  letter-spacing: 0px;
+  text-decoration: none;
+  color: #3a3a3a9f;
+  font-weight: normal;
+}
+
+.logo-footer {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  position: relative;
+  overflow: hidden;
+}
+
+footer h5 {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+footer .copyrigth span {
+  position: absolute;
+  font-family: "Khand", sans-serif;
+  font-weight: 700;
+  font-size: 150px;
+  bottom: -100px;
+  right: 0;
+  z-index: -1;
+  color: #ecedef;
+}
+/*# sourceMappingURL=style.css.map */
